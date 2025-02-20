@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tic Tac Toe Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.2);
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+    }
+
+    h1 {
+      color: white;
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #dfe6e9;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    #root {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin-top: 80px; /* Pushes the game below the header */
+    }
+  </style>
 </head>
 <body>
+
+  <header>
+    <h1>Tic Tac Toe Game</h1>
+    <p>Test your skills in this classic two-player game! Get three in a row to win.</p>
+  </header>
+
   <div id="root"></div>
+
 </body>
 </html>
